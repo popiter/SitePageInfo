@@ -233,7 +233,7 @@ body {
 	}
 
 	.input_check:checked+.check__text::before {
-		background: url(../img/check.svg) center center no-repeat;
+		background: url(../img/icon/check.svg) center center no-repeat;
 		background-color: #222;
 	}
 }
@@ -1195,7 +1195,7 @@ body {
 	}
 
 	.filter select {
-		background: url(../img/svg-editor-image.svg) no-repeat;
+		background: url(../img/icon/svg-editor-image.svg) no-repeat;
 		background-position: 90% 12px;
 	}
 
@@ -1851,7 +1851,7 @@ body {
 	background: none;
 	width: 22px;
 	height: 22px;
-	background: url(../img/modalCopy.svg) no-repeat;
+	background: url(../img/modal/modalCopy.svg) no-repeat;
 	position: absolute;
 	right: 50px;
 	top: 10px;
@@ -1928,7 +1928,7 @@ body {
 
 .modal-window-fore {
 	max-width: 496px;
-	background: url(../img/modalImg.svg) top right no-repeat #222222;
+	background: url(../img/modal/modalImg.svg) top right no-repeat #222222;
 	margin: 10% auto;
 	padding: 52px 40px 64px 40px;
 	border-radius: 3px;

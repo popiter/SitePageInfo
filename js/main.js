@@ -129,11 +129,11 @@ for (var x = 0; x < btn.length; x++) {
 				console.log(content[i]);
 				content[i].style.display = 'flex';
 				this.innerHTML = `<p class="arrow__text">Свернуть</p>
-						<img src="img/arrow.svg" alt="arrow">`
+						<img src="img/icon/arrow.svg" alt="arrow">`
 			} else {
 				content[i].style.display = 'none';
 				this.innerHTML = `<p class="arrow__text">Развернуть</p>
-						<img src="img/arrow.svg" alt="arrow">`
+						<img src="img/icon/arrow.svg" alt="arrow">`
 			}
 		}
 	});
@@ -149,11 +149,11 @@ for (var x = 0; x < btn2.length; x++) {
 				console.log(content2[i]);
 				content2[i].style.display = 'flex';
 				this.innerHTML = `<p class="arrow__text">Свернуть</p>
-						<img src="img/arrow.svg" alt="arrow">`
+						<img src="img/icon/arrow.svg" alt="arrow">`
 			} else {
 				content2[i].style.display = 'none';
 				this.innerHTML = `<p class="arrow__text">Развернуть</p>
-						<img src="img/arrow.svg" alt="arrow">`
+						<img src="img/icon/arrow.svg" alt="arrow">`
 			}
 		}
 	});
@@ -169,11 +169,11 @@ for (var x = 0; x < btn3.length; x++) {
 				console.log(content3[i]);
 				content3[i].style.display = 'flex';
 				this.innerHTML = `<p class="arrow__text">Свернуть</p>
-						<img src="img/arrow.svg" alt="arrow">`
+						<img src="img/icon/arrow.svg" alt="arrow">`
 			} else {
 				content3[i].style.display = 'none';
 				this.innerHTML = `<p class="arrow__text">Развернуть</p>
-						<img src="img/arrow.svg" alt="arrow">`
+						<img src="img/icon/arrow.svg" alt="arrow">`
 			}
 		}
 	});
