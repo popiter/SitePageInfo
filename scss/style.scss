@@ -1,29 +1,25 @@
 @font-face {
-	font-family: 'TT Norms Pro';
-	src: local('TT Norms Pro Bold'), local('TT-Norms-Pro-Bold'),
-		url('../font/TTNormsPro-Bold.woff2') format('woff2'),
-		url('../font/TTNormsPro-Bold.woff') format('woff'),
-		url('../font/TTNormsPro-Bold.ttf') format('truetype');
+	font-family: "TT Norms Pro";
+	src: local("TT Norms Pro Bold"), local("TT-Norms-Pro-Bold"), url("../font/TTNormsPro-Bold.woff2") format("woff2"),
+		url("../font/TTNormsPro-Bold.woff") format("woff"), url("../font/TTNormsPro-Bold.ttf") format("truetype");
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'TT Norms Pro';
-	src: local('TT Norms Pro Medium'), local('TT-Norms-Pro-Medium'),
-		url('../font/TTNormsPro-Medium.woff2') format('woff2'),
-		url('../font/TTNormsPro-Medium.woff') format('woff'),
-		url('../font/TTNormsPro-Medium.ttf') format('truetype');
+	font-family: "TT Norms Pro";
+	src: local("TT Norms Pro Medium"), local("TT-Norms-Pro-Medium"),
+		url("../font/TTNormsPro-Medium.woff2") format("woff2"), url("../font/TTNormsPro-Medium.woff") format("woff"),
+		url("../font/TTNormsPro-Medium.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'TT Norms Pro';
-	src: local('TT Norms Pro Regular'), local('TT-Norms-Pro-Regular'),
-		url('../font/TTNormsPro-Regular.woff2') format('woff2'),
-		url('../font/TTNormsPro-Regular.woff') format('woff'),
-		url('../font/TTNormsPro-Regular.ttf') format('truetype');
+	font-family: "TT Norms Pro";
+	src: local("TT Norms Pro Regular"), local("TT-Norms-Pro-Regular"),
+		url("../font/TTNormsPro-Regular.woff2") format("woff2"), url("../font/TTNormsPro-Regular.woff") format("woff"),
+		url("../font/TTNormsPro-Regular.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 }
@@ -96,7 +92,7 @@ body {
 
 .block-links__item:hover {
 	color: #fff;
-	transition: .2s;
+	transition: 0.2s;
 }
 
 .block-soc__description {
@@ -187,7 +183,7 @@ body {
 
 .submit:hover {
 	background-color: #fff;
-	transition: .2s;
+	transition: 0.2s;
 }
 
 .mailing__cheked {
@@ -218,13 +214,13 @@ body {
 		color: #ffb229;
 	}
 
-	.input_check+.check__text {
+	.input_check + .check__text {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
 
-	.input_check+.check__text::before {
+	.input_check + .check__text::before {
 		content: "";
 		display: inline-block;
 		width: 32px;
@@ -236,7 +232,7 @@ body {
 		background-color: #222;
 	}
 
-	.input_check:checked+.check__text::before {
+	.input_check:checked + .check__text::before {
 		background: url(../img/check.svg) center center no-repeat;
 		background-color: #222;
 	}
@@ -280,7 +276,6 @@ body {
 	margin-left: 77px;
 }
 
-
 .items__block {
 	display: flex;
 	align-items: center;
@@ -296,7 +291,7 @@ body {
 
 .items__block:hover {
 	opacity: 1;
-	transition: all .2s;
+	transition: all 0.2s;
 }
 
 //arrow
@@ -416,7 +411,7 @@ body {
 
 .categories__submit:hover {
 	background-color: #fff;
-	transition: all .2s;
+	transition: all 0.2s;
 }
 
 //city
@@ -490,7 +485,7 @@ body {
 
 	.footer__media:hover {
 		color: #fff;
-		transition: .2s;
+		transition: 0.2s;
 	}
 
 	img {
@@ -649,10 +644,8 @@ body {
 	}
 }
 
-
-// faq 
+// faq
 .faq {
-
 	h2 {
 		font-size: 32px;
 		line-height: 54px;
@@ -893,7 +886,6 @@ body {
 	}
 }
 
-
 //arrow__btnScpoll
 
 .arrow__btnScpoll {
@@ -922,57 +914,14 @@ body {
 	display: none;
 }
 
-// more btn 
+// more btn
 
 .content,
 .content3 {
 	display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1071px) {
-
 	.block-soc__description {
 		display: none;
 	}
@@ -1020,7 +969,7 @@ body {
 		flex-basis: 33%;
 	}
 
-	//shop page 
+	//shop page
 	.shop__filter__letter {
 		align-items: start;
 		display: inline-block;
@@ -1075,7 +1024,6 @@ body {
 }
 
 @media screen and (max-width: 920px) {
-
 	.items__block6,
 	.items__block12,
 	.items__block19,
@@ -1285,7 +1233,6 @@ body {
 	.items__block img {
 		width: 60%;
 	}
-
 }
 
 @media screen and (max-width: 620px) {
@@ -1305,7 +1252,6 @@ body {
 	}
 
 	.error404 {
-
 		img {
 			margin-bottom: 34px;
 		}
@@ -1503,7 +1449,6 @@ body {
 		align-items: center;
 		padding-top: 41px;
 		padding: 41px 0;
-
 	}
 
 	.coupon__left {
@@ -1641,7 +1586,6 @@ body {
 			margin-bottom: 41px;
 			line-height: 20px;
 		}
-
 	}
 
 	.mailing__cheked p {
@@ -1738,7 +1682,6 @@ body {
 	}
 }
 
-
 @media screen and (max-width: 410px) {
 	.items__block {
 		width: 75px;
@@ -1753,7 +1696,6 @@ body {
 }
 
 @media screen and (max-width: 380px) {
-
 	.city__item__block2,
 	.city__item__block6,
 	.city__item__block10,
@@ -1779,7 +1721,6 @@ body {
 	}
 
 	.modal-window-two {
-
 		p {
 			font-size: 16px;
 			line-height: 20px;
@@ -1928,7 +1869,6 @@ body {
 	background-color: #ffb229;
 	text-transform: uppercase;
 }
-
 
 #modal-window2 {
 	display: none;
