@@ -1882,6 +1882,23 @@ body {
 			letter-spacing: 0.6px;
 		}
 	}
+
+	/*modal*/
+	.modal-window-two {
+		padding-left: 30px;
+		padding-right: 30px;
+
+		p {
+			font-size: 16px;
+			line-height: 20px;
+		}
+
+		button {
+			font-size: 14px;
+			line-height: 30px;
+			letter-spacing: 0.6px;
+		}
+	}
 }
 
 @media screen and (max-width: 350px) {
@@ -1929,25 +1946,5 @@ body {
 @media screen and (min-height: 1360px) {
 	.error404 {
 		padding-top: 200px;
-	}
-}
-
-
-
-@media screen and (max-width: 380px) {
-	.modal-window-two {
-		padding-left: 30px;
-		padding-right: 30px;
-
-		p {
-			font-size: 16px;
-			line-height: 20px;
-		}
-
-		button {
-			font-size: 14px;
-			line-height: 30px;
-			letter-spacing: 0.6px;
-		}
 	}
 }
