@@ -604,13 +604,6 @@ body {
           align-items: center;
 }
 
-.сopyrightMB {
-  display: none;
-  font-size: 15px;
-  color: #fff;
-  opacity: 0.9;
-}
-
 .footer__mediaMB {
   display: none;
 }
@@ -912,10 +905,6 @@ body {
   text-align: center;
 }
 
-.brand__imgMB {
-  display: none;
-}
-
 /* coupon */
 .coupon {
   max-width: 1040px;
@@ -1149,8 +1138,6 @@ body {
   padding: 23px 50px 25px;
   background-color: rgba(146, 146, 146, 0.6);
   z-index: 1000;
-  -webkit-transition: all 2s;
-  transition: all 2s;
 }
 
 #modal-btn-shop {
@@ -1658,10 +1645,8 @@ body {
     margin-bottom: 26px;
   }
   .сopyright {
-    display: none;
-  }
-  .сopyrightMB {
     display: block;
+    padding: 0;
     padding-left: 35px;
   }
   #btnScpoll {
@@ -1700,9 +1685,6 @@ body {
             align-items: center;
   }
   .brand__img {
-    display: none;
-  }
-  .brand__imgMB {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1737,12 +1719,6 @@ body {
     padding: 41px 0;
   }
   .coupon__left {
-    display: none;
-  }
-  .coupon__left p {
-    line-height: 20px;
-  }
-  .coupon__bottomMB {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1751,8 +1727,9 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .coupon__bottomMB p {
+  .coupon__left p {
     font-size: 14px;
+    line-height: 20px;
   }
   .promo {
     margin: 0 auto;
