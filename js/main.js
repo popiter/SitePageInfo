@@ -188,11 +188,11 @@ var promo = document.querySelector('.modal_promo');
 
 //copy text
 if (btnCopy) {
-	btnCopy.onclick = function (e) {
+	btnCopy.onclick = function () {
 		var copyModal = document.createElement('div');
+		copyModal.style.transition = "1s"
 		copyModal.className = 'copyModal';
 		copyModal.innerHTML = 'Промокод скопирован в буфер';
-		copyModal.style.transition = "all 1s ease-in 2s"
 		document.body.append(copyModal)
 		setTimeout(function () {
 			copyModal.remove()

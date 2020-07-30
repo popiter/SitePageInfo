@@ -1147,10 +1147,10 @@ body {
   bottom: 20px;
   font-size: 14px;
   padding: 23px 50px 25px;
-  background-color: #929292;
+  background-color: rgba(146, 146, 146, 0.6);
   z-index: 1000;
-  -webkit-transition: all 1s ease-in 2s;
-  transition: all 1s ease-in 2s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 #modal-btn-shop {
