@@ -1230,6 +1230,10 @@ body {
   border-radius: 3px;
 }
 
+.modal-window-three img {
+  width: 7%;
+}
+
 #modal-window4 {
   display: none;
 }
