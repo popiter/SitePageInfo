@@ -411,7 +411,7 @@ body {
 }
 
 .categories__submit:hover {
-	background-color: #fff;
+	background-color: #444;
 	transition: all 0.2s;
 }
 
@@ -458,7 +458,6 @@ body {
 }
 
 /* footer */
-
 .footer {
 	border-top: 1px solid rgba(249, 249, 249, 0.2);
 	display: flex;
@@ -594,7 +593,7 @@ body {
 
 .shop__filter {
 	background-color: #222;
-	padding: 19px 33px 24px 32px;
+	padding: 19px 20px 24px 20px;
 	margin-bottom: 41px;
 	border-radius: 3px;
 }
@@ -616,21 +615,24 @@ body {
 		background-color: inherit;
 		color: #fff;
 		cursor: pointer;
-	}
 
-	.letter:hover {
-		background-color: #141414;
-		color: #ffb229;
+		&:hover {
+			background-color: #191919;
+			color: #ffb229;
+			transition: all .2s;
+		}
 	}
 
 	.letter__num {
 		padding-left: 4px;
+		width: 60px;
+		height: 31px;
 	}
 
 	.letter__rus {
-		width: 24px;
-		height: 24px;
-		padding-left: 4px;
+		width: 27px;
+		height: 25px;
+		padding-left: 4.5px;
 		border-radius: 50%;
 		border: none;
 		font-size: 20px;
@@ -639,9 +641,9 @@ body {
 	}
 
 	.letter__en {
-		padding-left: 4px;
-		width: 24px;
-		height: 24px;
+		padding-left: 5px;
+		width: 27px;
+		height: 27px;
 	}
 }
 
@@ -761,7 +763,7 @@ body {
 
 	a {
 		text-decoration: none;
-		padding: 14px 30px;
+		padding: 16px 30px;
 		font-size: 14px;
 		text-transform: uppercase;
 		line-height: 30px;
@@ -772,6 +774,11 @@ body {
 		outline: none;
 		color: #000;
 		background-color: #ffb229;
+
+		&:hover {
+			background-color: #fff;
+			transition: all .2s;
+		}
 	}
 }
 
@@ -818,7 +825,7 @@ body {
 }
 
 .promo__button {
-	padding: 12px 30px 0 30px;
+	padding: 15px 30px 0 30px;
 	text-transform: uppercase;
 	color: #ffb229;
 	font-weight: 700;
@@ -829,6 +836,11 @@ body {
 	width: 232px;
 	background-color: #222222;
 	cursor: pointer;
+
+	&:hover {
+		background-color: #444;
+		transition: all .2s;
+	}
 }
 
 .corner {
@@ -836,7 +848,7 @@ body {
 	height: 16px;
 	margin-left: 186px;
 	background: linear-gradient(-45deg, rgba(255, 178, 41, 1) 50%, rgba(122, 122, 122, 1) 50%);
-	border-radius: 3px;
+	border-radius: 3px 0 3px 0;
 }
 
 .coupon__right {
@@ -857,6 +869,10 @@ body {
 	flex-direction: column;
 	align-items: center;
 
+	img {
+		margin-bottom: 10px;
+	}
+
 	p {
 		text-transform: uppercase;
 		font-size: 14px;
@@ -868,12 +884,11 @@ body {
 }
 
 .sale {
-	position: absolute;
 	background-color: #fff;
-	width: 42px;
+	width: 40px;
 	height: 42px;
 	border-radius: 50%;
-	margin-left: 60px;
+	margin-left: 110px;
 	margin-top: -40px;
 
 	p {
@@ -882,7 +897,7 @@ body {
 		color: #121212;
 		font-weight: 700;
 		text-align: center;
-		padding-top: 5px;
+		padding-top: 4px;
 	}
 }
 
@@ -914,8 +929,8 @@ body {
 }
 
 /* more btn */
-.content,
-.content3 {
+.content__parther,
+.content__city {
 	display: none;
 }
 
@@ -992,9 +1007,22 @@ body {
 	top: 10px;
 }
 
+.copyModal {
+	position: absolute;
+	color: #fff;
+	right: 20px;
+	bottom: 20px;
+	font-size: 14px;
+	padding: 23px 50px 25px;
+	background-color: #929292;
+	z-index: 1000;
+	transition: all 1s ease-in 2s;
+}
+
 #modal-btn-shop {
 	margin-top: 47px;
 }
+
 
 #modal-btn-shop a {
 	border-radius: 4px;
@@ -1005,6 +1033,11 @@ body {
 	padding: 15px 30px;
 	background-color: #ffb229;
 	text-transform: uppercase;
+
+	&:hover {
+		background-color: #fff;
+		transition: all .2s;
+	}
 }
 
 #modal-window2 {
@@ -1032,7 +1065,7 @@ body {
 }
 
 .modal__btn {
-	padding: 8px 30px 12px;
+	padding: 12px 30px 12px;
 	background-color: #ffb229;
 	text-transform: uppercase;
 	border: none;
@@ -1043,6 +1076,11 @@ body {
 	color: #000;
 	border-radius: 3px;
 	cursor: pointer;
+
+	&:hover {
+		background-color: #fff;
+		transition: all .2s;
+	}
 }
 
 #modal-window3 {
@@ -1050,7 +1088,7 @@ body {
 }
 
 .modal-window-three {
-	max-width: 426px;
+	max-width: 368px;
 	background: #222222;
 	margin: 10% auto;
 	padding: 52px 40px 64px 40px;
@@ -1062,7 +1100,7 @@ body {
 }
 
 .modal-window-fore {
-	max-width: 496px;
+	max-width: 480px;
 	background: url(../img/modal/modalImg.svg) top right no-repeat #222222;
 	margin: 10% auto;
 	padding: 52px 40px 64px 40px;
@@ -1242,7 +1280,7 @@ body {
 			margin-bottom: 18px;
 		}
 
-		p {
+		.servise__text {
 			font-size: 14px;
 			line-height: 20px;
 			margin-bottom: 25px;
@@ -1542,7 +1580,7 @@ body {
 
 	/* 404 */
 	.error404 img {
-		width: 100%;
+		min-width: 100%;
 	}
 
 	/* shop Brand */
@@ -1556,6 +1594,7 @@ body {
 
 		p {
 			font-size: 14px;
+			line-height: 20px;
 		}
 
 		a {
@@ -1602,6 +1641,10 @@ body {
 
 	.coupon__left {
 		display: none;
+
+		p {
+			line-height: 20px;
+		}
 	}
 
 	.coupon__bottomMB {
@@ -1634,7 +1677,7 @@ body {
 			margin-bottom: 16px;
 			margin-right: 0;
 			padding: 8px 0 12px 24px;
-			width: 270px;
+			width: 100%;
 		}
 	}
 
@@ -1651,6 +1694,7 @@ body {
 		padding: 10px 75px 10px 75px;
 		margin-right: 0px;
 		margin-bottom: 32px;
+		width: 100%;
 	}
 
 	.items__block {
@@ -1771,7 +1815,11 @@ body {
 		margin-bottom: 0px;
 	}
 
-	.servise .servise__text {
+	.servise__text span {
+		margin-bottom: 25px;
+	}
+
+	.servise .servise__text:not(.servise__subtitle) {
 		margin-bottom: 0px;
 	}
 
@@ -1781,6 +1829,10 @@ body {
 		h2 {
 			margin-bottom: 5px;
 		}
+	}
+
+	.servise .servise__subtitle {
+		margin-bottom: 20px;
 	}
 
 	.Last__categories__item__block {
@@ -1797,6 +1849,13 @@ body {
 		h2 {
 			margin-bottom: 25px;
 		}
+	}
+
+	.categories__submit {
+		padding: 10px 0 10px 0;
+		display: block;
+		width: 100%;
+		text-align: center;
 	}
 
 	/* FAQ */
@@ -1866,10 +1925,6 @@ body {
 		padding-right: 0;
 	}
 
-	.categories__submit {
-		padding: 12px 70px 12px 70px;
-	}
-
 	.modal-window-two {
 		p {
 			font-size: 16px;
@@ -1928,11 +1983,42 @@ body {
 		width: 100%;
 		text-align: center;
 	}
+
+	/* modal */
+	#modal-btn-shop a {
+		padding: 15px 10px;
+	}
+
+	#modal-copy {
+		right: 25px;
+	}
+}
+
+/* 404 */
+@media screen and (max-width: 900px) {
+	.error404 {
+		padding-top: 7%;
+		margin-bottom: 7%;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.error404 {
+		padding-top: 5%;
+		margin-bottom: 15%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.error404 {
+		padding-top: 7%;
+		margin-bottom: 19%;
+	}
 }
 
 @media screen and (min-height: 960px) {
 	.error404 {
-		padding-top: 100px;
+		padding-top: 22px;
 	}
 }
 

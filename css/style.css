@@ -469,7 +469,7 @@ body {
 }
 
 .categories__submit:hover {
-  background-color: #fff;
+  background-color: #444;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -691,7 +691,7 @@ body {
 
 .shop__filter {
   background-color: #222;
-  padding: 19px 33px 24px 32px;
+  padding: 19px 20px 24px 20px;
   margin-bottom: 41px;
   border-radius: 3px;
 }
@@ -727,18 +727,22 @@ body {
 }
 
 .shop__filter__letter .letter:hover {
-  background-color: #141414;
+  background-color: #191919;
   color: #ffb229;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .shop__filter__letter .letter__num {
   padding-left: 4px;
+  width: 60px;
+  height: 31px;
 }
 
 .shop__filter__letter .letter__rus {
-  width: 24px;
-  height: 24px;
-  padding-left: 4px;
+  width: 27px;
+  height: 25px;
+  padding-left: 4.5px;
   border-radius: 50%;
   border: none;
   font-size: 20px;
@@ -747,9 +751,9 @@ body {
 }
 
 .shop__filter__letter .letter__en {
-  padding-left: 4px;
-  width: 24px;
-  height: 24px;
+  padding-left: 5px;
+  width: 27px;
+  height: 27px;
 }
 
 /* faq */
@@ -881,7 +885,7 @@ body {
 
 .brand a {
   text-decoration: none;
-  padding: 14px 30px;
+  padding: 16px 30px;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 30px;
@@ -892,6 +896,12 @@ body {
   outline: none;
   color: #000;
   background-color: #ffb229;
+}
+
+.brand a:hover {
+  background-color: #fff;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .brand__img {
@@ -939,7 +949,7 @@ body {
 }
 
 .promo__button {
-  padding: 12px 30px 0 30px;
+  padding: 15px 30px 0 30px;
   text-transform: uppercase;
   color: #ffb229;
   font-weight: 700;
@@ -952,12 +962,18 @@ body {
   cursor: pointer;
 }
 
+.promo__button:hover {
+  background-color: #444;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
 .corner {
   width: 16px;
   height: 16px;
   margin-left: 186px;
   background: linear-gradient(-45deg, #ffb229 50%, #7a7a7a 50%);
-  border-radius: 3px;
+  border-radius: 3px 0 3px 0;
 }
 
 .coupon__right {
@@ -986,6 +1002,10 @@ body {
           align-items: center;
 }
 
+.coupon__right__inner img {
+  margin-bottom: 10px;
+}
+
 .coupon__right__inner p {
   text-transform: uppercase;
   font-size: 14px;
@@ -996,12 +1016,11 @@ body {
 }
 
 .sale {
-  position: absolute;
   background-color: #fff;
-  width: 42px;
+  width: 40px;
   height: 42px;
   border-radius: 50%;
-  margin-left: 60px;
+  margin-left: 110px;
   margin-top: -40px;
 }
 
@@ -1011,7 +1030,7 @@ body {
   color: #121212;
   font-weight: 700;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 4px;
 }
 
 /* arrow__btnScpoll */
@@ -1043,8 +1062,8 @@ body {
 }
 
 /* more btn */
-.content,
-.content3 {
+.content__parther,
+.content__city {
   display: none;
 }
 
@@ -1121,6 +1140,19 @@ body {
   top: 10px;
 }
 
+.copyModal {
+  position: absolute;
+  color: #fff;
+  right: 20px;
+  bottom: 20px;
+  font-size: 14px;
+  padding: 23px 50px 25px;
+  background-color: #929292;
+  z-index: 1000;
+  -webkit-transition: all 1s ease-in 2s;
+  transition: all 1s ease-in 2s;
+}
+
 #modal-btn-shop {
   margin-top: 47px;
 }
@@ -1134,6 +1166,12 @@ body {
   padding: 15px 30px;
   background-color: #ffb229;
   text-transform: uppercase;
+}
+
+#modal-btn-shop a:hover {
+  background-color: #fff;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 #modal-window2 {
@@ -1161,7 +1199,7 @@ body {
 }
 
 .modal__btn {
-  padding: 8px 30px 12px;
+  padding: 12px 30px 12px;
   background-color: #ffb229;
   text-transform: uppercase;
   border: none;
@@ -1174,12 +1212,18 @@ body {
   cursor: pointer;
 }
 
+.modal__btn:hover {
+  background-color: #fff;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
 #modal-window3 {
   display: none;
 }
 
 .modal-window-three {
-  max-width: 426px;
+  max-width: 368px;
   background: #222222;
   margin: 10% auto;
   padding: 52px 40px 64px 40px;
@@ -1191,7 +1235,7 @@ body {
 }
 
 .modal-window-fore {
-  max-width: 496px;
+  max-width: 480px;
   background: url(../img/modal/modalImg.svg) top right no-repeat #222222;
   margin: 10% auto;
   padding: 52px 40px 64px 40px;
@@ -1351,7 +1395,7 @@ body {
     font-size: 16px;
     margin-bottom: 18px;
   }
-  .servise p {
+  .servise .servise__text {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 25px;
@@ -1622,7 +1666,7 @@ body {
   }
   /* 404 */
   .error404 img {
-    width: 100%;
+    min-width: 100%;
   }
   /* shop Brand */
   .brand {
@@ -1634,6 +1678,7 @@ body {
   }
   .brand p {
     font-size: 14px;
+    line-height: 20px;
   }
   .brand a {
     padding: 7px 30px;
@@ -1690,6 +1735,9 @@ body {
   .coupon__left {
     display: none;
   }
+  .coupon__left p {
+    line-height: 20px;
+  }
   .coupon__bottomMB {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1724,7 +1772,7 @@ body {
     margin-bottom: 16px;
     margin-right: 0;
     padding: 8px 0 12px 24px;
-    width: 270px;
+    width: 100%;
   }
   .mailing__cheked {
     padding-top: 5px;
@@ -1739,6 +1787,7 @@ body {
     padding: 10px 75px 10px 75px;
     margin-right: 0px;
     margin-bottom: 32px;
+    width: 100%;
   }
   .items__block {
     width: 75px;
@@ -1837,7 +1886,10 @@ body {
   .servise p {
     margin-bottom: 0px;
   }
-  .servise .servise__text {
+  .servise__text span {
+    margin-bottom: 25px;
+  }
+  .servise .servise__text:not(.servise__subtitle) {
     margin-bottom: 0px;
   }
   .categories {
@@ -1845,6 +1897,9 @@ body {
   }
   .categories h2 {
     margin-bottom: 5px;
+  }
+  .servise .servise__subtitle {
+    margin-bottom: 20px;
   }
   .Last__categories__item__block {
     display: none;
@@ -1857,6 +1912,12 @@ body {
   }
   .city h2 {
     margin-bottom: 25px;
+  }
+  .categories__submit {
+    padding: 10px 0 10px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
   }
   /* FAQ */
   .faq__answer {
@@ -1917,9 +1978,6 @@ body {
     padding-left: 15%;
     padding-right: 0;
   }
-  .categories__submit {
-    padding: 12px 70px 12px 70px;
-  }
   .modal-window-two p {
     font-size: 16px;
     line-height: 20px;
@@ -1968,11 +2026,40 @@ body {
     width: 100%;
     text-align: center;
   }
+  /* modal */
+  #modal-btn-shop a {
+    padding: 15px 10px;
+  }
+  #modal-copy {
+    right: 25px;
+  }
+}
+
+/* 404 */
+@media screen and (max-width: 900px) {
+  .error404 {
+    padding-top: 7%;
+    margin-bottom: 7%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .error404 {
+    padding-top: 5%;
+    margin-bottom: 15%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .error404 {
+    padding-top: 7%;
+    margin-bottom: 19%;
+  }
 }
 
 @media screen and (min-height: 960px) {
   .error404 {
-    padding-top: 100px;
+    padding-top: 22px;
   }
 }
 

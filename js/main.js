@@ -17,7 +17,7 @@ function openMenu() {
 		headerBlock.style.padding = '0px';
 		burger.style.position = 'absolute';
 		burger.style.right = '25px';
-		burger.style.top = '29px';
+		burger.style.top = '22px';
 		document.body.style.overflow = 'hidden';
 	} else if (screen.width > '470') {
 		burger.style.position = 'relative';
@@ -77,14 +77,14 @@ function topFunction() {
 })();
 
 window.addEventListener("optimizedResize", function () {
-	testFunction();
+	tracking();
 });
 
-function testFunction() {
+function tracking() {
 	if (window.innerWidth < 770 && document.querySelector('.partner__shop__items27-33')) {
-		document.querySelector('.partner__shop__items27-33').classList.add('content');
+		document.querySelector('.partner__shop__items27-33').classList.add('content__parther');
 	} else if (document.querySelector('.partner__shop__items27-33')) {
-		document.querySelector('.partner__shop__items27-33').classList.remove('content');
+		document.querySelector('.partner__shop__items27-33').classList.remove('content__parther');
 	}
 
 	if (window.innerWidth > 770 && document.querySelector('.partner__shop__items27-33')) {
@@ -94,17 +94,17 @@ function testFunction() {
 	}
 
 	if (window.innerWidth < 470 && document.querySelector('.servise__mb')) {
-		document.querySelector('.servise__mb').classList.add('content2');
+		document.querySelector('.servise__mb').classList.add('content__servise');
 	} else if (document.querySelector('.servise__mb')) {
-		document.querySelector('.servise__mb').classList.remove('content2');
+		document.querySelector('.servise__mb').classList.remove('content__servise');
 	}
 
 	if (window.innerWidth < 470 && document.querySelector('.servise__title') && document.querySelector('.servise__subtitle')) {
-		document.querySelector('.servise__title').classList.add('content2');
-		document.querySelector('.servise__subtitle').classList.add('content2');
+		document.querySelector('.servise__title').classList.add('content__servise');
+		document.querySelector('.servise__subtitle').classList.add('content__servise');
 	} else if (document.querySelector('.servise__title') && document.querySelector('.servise__subtitle')) {
-		document.querySelector('.servise__subtitle').classList.remove('content2');
-		document.querySelector('.servise__title').classList.remove('content2');
+		document.querySelector('.servise__subtitle').classList.remove('content__servise');
+		document.querySelector('.servise__title').classList.remove('content__servise');
 	}
 
 	if (window.innerWidth > 470 && document.querySelector('.servise__mb')) {
@@ -114,7 +114,7 @@ function testFunction() {
 	}
 }
 
-testFunction();
+tracking();
 var btn = document.getElementsByClassName('arrow');
 var btn2 = document.getElementsByClassName('arrow2');
 var btn3 = document.getElementsByClassName('arrow3');
@@ -122,7 +122,26 @@ var btn3 = document.getElementsByClassName('arrow3');
 for (var x = 0; x < btn.length; x++) {
 	btn[x].addEventListener('click', function () {
 		this.classList.toggle("open__btn");
-		var content = document.getElementsByClassName('content');
+		var content = document.getElementsByClassName('content__parther');
+
+		for (var i = 0; i < content.length; i++) {
+			if (this.classList.contains('open__btn')) {
+				content[i].style.display = 'flex';
+				this.innerHTML = `<p class="arrow__text">Свернуть</p>
+						<img src="img/icon/arrow.svg" alt="arrow">`
+			} else {
+				content[i].style.display = 'none';
+				this.innerHTML = `<p class="arrow__text">Развернуть</p>
+						<img src="img/icon/arrow.svg" alt="arrow">`
+			}
+		}
+	});
+}
+
+for (var x = 0; x < btn2.length; x++) {
+	btn2[x].addEventListener('click', function () {
+		this.classList.toggle("open__btn");
+		var content = document.getElementsByClassName('content__servise');
 
 		for (var i = 0; i < content.length; i++) {
 			if (this.classList.contains('open__btn')) {
@@ -139,39 +158,18 @@ for (var x = 0; x < btn.length; x++) {
 	});
 }
 
-for (var x = 0; x < btn2.length; x++) {
-	btn2[x].addEventListener('click', function () {
-		this.classList.toggle("open__btn");
-		var content2 = document.getElementsByClassName('content2');
-
-		for (var i = 0; i < content2.length; i++) {
-			if (this.classList.contains('open__btn')) {
-				console.log(content2[i]);
-				content2[i].style.display = 'flex';
-				this.innerHTML = `<p class="arrow__text">Свернуть</p>
-						<img src="img/icon/arrow.svg" alt="arrow">`
-			} else {
-				content2[i].style.display = 'none';
-				this.innerHTML = `<p class="arrow__text">Развернуть</p>
-						<img src="img/icon/arrow.svg" alt="arrow">`
-			}
-		}
-	});
-}
-
 for (var x = 0; x < btn3.length; x++) {
 	btn3[x].addEventListener('click', function () {
 		this.classList.toggle("open__btn");
-		var content3 = document.getElementsByClassName('content3');
+		var content = document.getElementsByClassName('content__city');
 
-		for (var i = 0; i < content3.length; i++) {
+		for (var i = 0; i < content.length; i++) {
 			if (this.classList.contains('open__btn')) {
-				console.log(content3[i]);
-				content3[i].style.display = 'flex';
+				content[i].style.display = 'flex';
 				this.innerHTML = `<p class="arrow__text">Свернуть</p>
 						<img src="img/icon/arrow.svg" alt="arrow">`
 			} else {
-				content3[i].style.display = 'none';
+				content[i].style.display = 'none';
 				this.innerHTML = `<p class="arrow__text">Развернуть</p>
 						<img src="img/icon/arrow.svg" alt="arrow">`
 			}
@@ -186,14 +184,36 @@ var ModalBtn3 = document.getElementById('modal-call3');
 var ModalBtn4 = document.getElementById('modal-call4');
 var modalPromoText = document.getElementById('modal-promo-text');
 var btnCopy = document.getElementById('modal-copy');
+var promo = document.querySelector('.modal_promo');
 
-if (ModalBtn || ModalBtn2 || ModalBtn3 || ModalBtn4 || btnCopy) {
+//copy text
+if (btnCopy) {
+	btnCopy.onclick = function (e) {
+		var copyModal = document.createElement('div');
+		copyModal.className = 'copyModal';
+		copyModal.innerHTML = 'Промокод скопирован в буфер';
+		copyModal.style.transition = "all 1s ease-in 2s"
+		document.body.append(copyModal)
+		setTimeout(function () {
+			copyModal.remove()
+		}, 3000)
+	}
+}
+
+if (ModalBtn) {
 	ModalBtn.addEventListener('click', openModal);
-	ModalBtn2.addEventListener('click', openModal2);
-	ModalBtn3.addEventListener('click', openModal3);
-	ModalBtn4.addEventListener('click', openModal4);
 	btnCopy.addEventListener('click', copyCode);
 }
+if (ModalBtn2) {
+	ModalBtn2.addEventListener('click', openModal2);
+}
+if (ModalBtn3) {
+	ModalBtn3.addEventListener('click', openModal3);
+}
+if (ModalBtn4) {
+	ModalBtn4.addEventListener('click', openModal4);
+}
+
 
 // Запрещение ввода в поле
 if (modalPromoText) {
@@ -241,7 +261,7 @@ function openModal4() {
 	});
 }
 
-// Копирование промокода для 1 модального окна
+// Копирование промокода
 function copyCode(e) {
 	e.preventDefault();
 	modalPromoText.select();
