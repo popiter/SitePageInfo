@@ -1316,7 +1316,7 @@ body {
   }
   .footer__mediaTB {
     display: block;
-    padding: 0 25px;
+    padding: 0 25px 0 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
